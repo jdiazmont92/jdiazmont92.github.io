@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta utf-8>
         <title>Pagina Web</title>
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="css/lightbox.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/reset.css">
-        
+        <link rel="stylesheet" href="css/bootstrap.css">
         <script>document.getElementsByTagName("html")[0].className += " js";</script>
-        
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     </head>
     <body>
@@ -19,8 +20,8 @@
                         <ul>
                             <!-- inser more links here -->
                             <li><a href="#cd-intro">Home</a></li>
-                            <li><a href="#cd-content">Speakers</a></li>
-                            <li><a href="#0">Pricing</a></li>
+                            <li><a href="#speakers">Speakers</a></li>
+                            <li><a href="#agenda">Agenda</a></li>
                             <li><a href="#0">Gallery</a></li>
                             <li><a href="#0">Contact</a></li>
                         </ul>
@@ -37,70 +38,21 @@
                             <li><a href="https://www.instagram.com/" target="_blank"> <img src="image/icons8-instagram-50.png"></a></li>
                             <li><a href="https://www.linkedin.com" target="_blank"> <img src="image/icons8-linkedin-50.png"></a></li>
                         </ul>
-                    </div> <!-- cd-intro-tagline -->
-                    <ul>
-                        <li><a href="www.facebook.com" target="_blank" icon="face_icon"></a></li>
-                    </ul>
-                        
+                    </div> <!-- cd-intro-tagline -->              
                 </section> <!-- #cd-intro -->
-            
-                <main class="cd-content">
-                    <section>
-                        <header class="cd-main-header text-center flex flex-column flex-center">
-                          <h1>Speakers</h1>
-                        </header>
-                        <div class="row-speak">
-                            <div class="container px-lg-5">
-                                <div class="row mx-lg-n5">
-                                  <div class="col py-3 px-lg-5">
-                                    <img src="https://via.placeholder.com/300">
-                                  </div>
-                                  <div class="col py-3 px-lg-5">
-                                    <h1>Robyn Brown</h1>
-                                    <h3>Building Data Driven Companies</h3>
-                                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-                                    <div class="redes-sociales">
-                                        <a href="https://www.facebook.com" target="_blank"> <img src="image/icons8-facebook-50.png"></a>
-                                        <a href="https://twitter.com/" target="_blank"> <img src="image/icons8-twitter-50.png"></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div> 
-                              <div class="container px-lg-5">
-                                  <div class="row mx-lg-n5">
-                                    <div class="col py-3 px-lg-5">
-                                        <h1>Robyn Brown</h1>
-                                        <h3>Building Data Driven Companies</h3>
-                                        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-                                        <div class="redes-sociales">
-                                            <a href="https://www.facebook.com" target="_blank"> <img src="image/icons8-facebook-50.png"></a>
-                                            <a href="https://twitter.com/" target="_blank"> <img src="image/icons8-twitter-50.png"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col py-3 px-lg-5">
-                                        <img src="https://via.placeholder.com/300">
-                                      </div>
-                                  </div>
-                                </div>  
+
+                <main class="cd-content" id="speakers">
+                          <section>
+                            <header class="cd-main-header text-center flex flex-column flex-center">
+                              <h1>Speakers</h1>
+                            </header>
+                            <div class="row-speak">
                                 <div class="container px-lg-5">
-                                <div class="row mx-lg-n5">
-                                  <div class="col py-3 px-lg-5">
-                                    <img src="https://via.placeholder.com/300">
-                                  </div>
-                                  <div class="col py-3 px-lg-5">
-                                    <h1>Robyn Brown</h1>
-                                    <h3>Building Data Driven Companies</h3>
-                                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-                                    <div class="redes-sociales">
-                                        <a href="https://www.facebook.com" target="_blank"> <img src="image/icons8-facebook-50.png"></a>
-                                        <a href="https://twitter.com/" target="_blank"> <img src="image/icons8-twitter-50.png"></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div> 
-                              <div class="container px-lg-5">
-                                  <div class="row mx-lg-n5">
-                                    <div class="col py-3 px-lg-5">
+                                    <div class="row mx-lg-n5">
+                                      <div class="col py-3 px-lg-5">
+                                        <img src="https://via.placeholder.com/300">
+                                      </div>
+                                      <div class="col py-3 px-lg-5">
                                         <h1>Robyn Brown</h1>
                                         <h3>Building Data Driven Companies</h3>
                                         <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
@@ -109,16 +61,62 @@
                                             <a href="https://twitter.com/" target="_blank"> <img src="image/icons8-twitter-50.png"></a>
                                         </div>
                                       </div>
-                                    <div class="col py-3 px-lg-5">
+                                    </div>
+                                  </div> 
+                                  <div class="container px-lg-5">
+                                      <div class="row mx-lg-n5">
+                                        <div class="col py-3 px-lg-5">
+                                            <h1>Robyn Brown</h1>
+                                            <h3>Building Data Driven Companies</h3>
+                                            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                                            <div class="redes-sociales">
+                                                <a href="https://www.facebook.com" target="_blank"> <img src="image/icons8-facebook-50.png"></a>
+                                                <a href="https://twitter.com/" target="_blank"> <img src="image/icons8-twitter-50.png"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col py-3 px-lg-5">
+                                            <img src="https://via.placeholder.com/300">
+                                          </div>
+                                      </div>
+                                    </div>  
+                                    <div class="container px-lg-5">
+                                    <div class="row mx-lg-n5">
+                                      <div class="col py-3 px-lg-5">
                                         <img src="https://via.placeholder.com/300">
                                       </div>
-                                  </div>
-                                </div>  
-                        </div>
-                    </section>
-                        <header class="cd-main-header text-center flex flex-column flex-center">
-                              <h1>Agenda</h1>
-                         </header>
+                                      <div class="col py-3 px-lg-5">
+                                        <h1>Robyn Brown</h1>
+                                        <h3>Building Data Driven Companies</h3>
+                                        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                                        <div class="redes-sociales">
+                                            <a href="https://www.facebook.com" target="_blank"> <img src="image/icons8-facebook-50.png"></a>
+                                            <a href="https://twitter.com/" target="_blank"> <img src="image/icons8-twitter-50.png"></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div> 
+                                  <div class="container px-lg-5">
+                                      <div class="row mx-lg-n5">
+                                        <div class="col py-3 px-lg-5">
+                                            <h1>Robyn Brown</h1>
+                                            <h3>Building Data Driven Companies</h3>
+                                            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                                            <div class="redes-sociales">
+                                                <a href="https://www.facebook.com" target="_blank"> <img src="image/icons8-facebook-50.png"></a>
+                                                <a href="https://twitter.com/" target="_blank"> <img src="image/icons8-twitter-50.png"></a>
+                                            </div>
+                                          </div>
+                                        <div class="col py-3 px-lg-5">
+                                            <img src="https://via.placeholder.com/300">
+                                          </div>
+                                      </div>
+                                    </div>  
+                            </div>
+                        </section>
+
+                        <header class="cd-main-header text-center flex flex-column flex-center" id="agenda">
+                                <h1>Agenda</h1>
+                                </header>
                         <section class="cd-timeline js-cd-timeline">
                                 <div class="container max-width-lg cd-timeline__container">
                                   <div class="cd-timeline__block">
@@ -217,108 +215,55 @@
                                   </div> <!-- cd-timeline__block -->
                                 </div>
                               </section> <!-- cd-timeline -->
-            <!--<header class="site-header">
-                    <div class="container">
-                        <div class="header-content">
-                            <div class="top-menu  scroll-reveal">
-                                <div class="menu">
-                                    <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
-                                        <button class="menu-icon dark" type="button" data-toggle="main-nav"></button>
-                                        <div class="title-bar-title">Menu</div>
+
+                <section>
+                <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(image/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+                    <div class="overlay"></div>
+                      <div class="colorlib-narrow-content">
+                          <div class="row">
+                                  <div class="col-md-3 text-center animate-box">
+                                        <!--<span class="icon"><i class="flaticon-skyline"></i></span>-->
+                                        <span class="colorlib-counter js-counter" data-from="0" data-to="200" data-speed="5000" data-refresh-interval="50"></span>
+                                        <span class="colorlib-counter-label">Proyectos</span>
                                     </div>
-            
-                                    <nav id="main-nav" data-animate="menu-in menu-out">
-                                        <ul class="main-navigation">
-                                            <li><a class="m-active" href="#" data-text="Home">Inicio</a></li>
-                                            <li><a class="m-anim" href="#specials-grid" data-text="Specials">Especiales</a></li>
-                                            <li><a class="m-anim" href="#about-us" data-text="About">Nosotros</a></li>
-                                            <li><a class="m-anim" href="#main-menu" data-text="Menu Cart">Instalaciones</a></li>
-                                            <li><a class="m-anim" href="#contact-us" data-text="Contact">Contacto</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider">
-                        <div class="a-slide slide1">
-                            <div class="container">
-                              <div class="bottom-section scroll-reveal" data-origin="right" data-distance="20%">
-                                  <div class="divider"><?xml version="1.0" encoding="utf-8"?>
-                                      Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) 
-                                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1930 255.5" style="enable-background:new 0 0 1930 255.5;" xml:space="preserve">
-                                    
-                                      
-                                    </svg>
-                                  </div>
-                                   divider
-            
-                                </div>
-                                <bottom-section
-                            </div>
-                        </div>
-                        <div class="a-slide slide2">
-                            <div class="container">
-                                <div class="bottom-section">
-                                    <h1 class="header-txt">&nbsp;</h1>
-                                    <div class="divider">
-                                        <?xml version="1.0" encoding="utf-8"?>
-                                        Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  
-                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1930 255.5" style="enable-background:new 0 0 1930 255.5;" xml:space="preserve">
-                                         
-                                      </svg>
+                                    <div class="col-md-3 text-center animate-box">
+                                        <!--<span class="icon"><i class="flaticon-engineer"></i></span>-->
+                                        <span class="colorlib-counter js-counter" data-from="0" data-to="3653" data-speed="5000" data-refresh-interval="50"></span>
+                                        <span class="colorlib-counter-label">Empleos Generados</span>
                                     </div>
-                                    .divider
-                                </div>
-                                .bottom-section
+                                    <div class="col-md-3 text-center animate-box">
+                                    <!--<span class="icon"><i class="flaticon-architect-with-helmet"></i></span>-->
+                                        <span class="colorlib-counter js-counter" data-from="0" data-to="5987" data-speed="5000" data-refresh-interval="50"></span>
+                                        <span class="colorlib-counter-label">Clientes</span>
+                                    </div>
+                                    <div class="col-md-3 text-center animate-box">
+                                        <!--<span class="icon"><i class="flaticon-worker"></i></span>-->
+                                        <span class="colorlib-counter js-counter" data-from="0" data-to="3999" data-speed="5000" data-refresh-interval="50"></span>
+                                        <span class="colorlib-counter-label">Compañeros</span>
+                                    </div>
                             </div>
-                        </div>
-                    </div>
-            
-                </header>-->
-            
-                <section class="category-icons">
-                    <div class="container">
-                        <div class="yellow-content">
-                            <div class="icon">
-                              <h3 class="scroll-reveal" data-origin="top" data-distance="20%">Sazón Mexicano</h3>
-                                <p class="scroll-reveal" data-distance="0" data-duration="500">Deliciosos platillos mexicanos hechos con los mejores ingredientes y recetas tradicionales</p>
-                            </div>
-                            <div class="icon">
-                              <h3 class="scroll-reveal" data-origin="top" data-distance="20%">Lugar 100% Familiar</h3>
-                                <p class="scroll-reveal" data-distance="0" data-duration="700">Excelente por sus precios, su ambiente y no pueden faltar los domignos familiares. Contamos con área para niños.</p>
-                            </div>
-                            <div class="icon">
-                              <h3 class="scroll-reveal" data-origin="top" data-distance="20%">Salones y Jardin para tus Eventos</h3>
-                                <p class="scroll-reveal" data-distance="0" data-duration="900">Contamos con diferentes espacios para tus eventos especiales. El mejor servicioy la mejor atención. </p>
-                            </div>
-                        </div>
-                        <!--.yellow-content-->
-                    </div>
-                    <!--.container-->
-                </section>
-                <!--.category-icons-->
+                      </div>
+                </div>
+              </section>
+              <section class="container-fluid px-0 pt-3 mt-3 pt-md-5 mt-md-5 text-center text-md-left" id="phrase">
+                  <div class="row no-gutters">
+                      <div class="col-12 col-lg-8">
+                          <img alt="..." class="w-100 h-100 img-fluid" src="image/computer.jpg">
+                      </div>
+                      <div class="col-12 col-lg-4 px-3 px-md-5 pt-4 pt-md-5 bg-gray">
+                          <h1 class="cormorant cormorant-title-100 font-big">Artigas</h1>
+                          <h4 class="font-italic">Arquitectura</h4>
+                          <p class="mb-md-5">Con su indiscutible mezcla de elementos mexicanos rústicos y modernos, el legendario despacho Artigas Arquitectos, ahora pone su enfoque en llevar a la realidad nuestro icónico proyecto residencial.</p>
+                          <!--<a class="link-italic-blue" href="http://artigas.com.mx/" target="_blank">artigas.com.mx</a>-->
+                      </div>
+                  </div>
+              </section>
+      
+                
             
                 <section id="specials-grid" class="month-specials" data-scroll-reveal="enter from the bottom after 0.9s">
                     <div class="container">
                         <h1 class="header-txt">Nuestros Especiales</h1>
-                        <div class="divider">
-                            <?xml version="1.0" encoding="utf-8"?>
-                            <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1930 255.5" style="enable-background:new 0 0 1930 255.5;" xml:space="preserve">
-                                            <style type="text/css">
-                                                .st0{fill:none;stroke:#3c3c3c;stroke-width:10;stroke-linecap:square;stroke-miterlimit:10;}
-                                            </style>
-                                            <polyline class="st0" points="1224,171.8 1181.3,171.8 1139.2,129.6 1065,203.9 970.5,110.4 876,203.6 801.8,129.4 759.7,171.5 
-                                                717,171.5 "/>
-                                            <polyline class="st0" points="5,131.5 757.3,131.5 801.8,176.1 885.9,91.9 868.3,74.2 831.5,111 870.4,149.9 970.2,50.2 1070,149.9 
-                                                1108.8,111 1072.1,74.2 1054.4,91.9 1138.5,176.1 1183.1,131.5 1925,131.5 "/>
-                                            <rect x="921.9" y="26.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 231.426 707.2043)" class="st0" width="95" height="95"/>
-                                            <rect x="921.9" y="99.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 179.8072 728.5855)" class="st0" width="95" height="95"/>
-                                            <rect x="940.3" y="178.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 137.3893 746.1556)" class="st0" width="58.2" height="58.2"/>
-                                            </svg>
-                        </div>
-                        <!--.divider-->
                         <div class="specials-content">
                             <div class="special">
                                 <div class="special-img img-01">
@@ -403,50 +348,15 @@
                     <div class="container">
                         <div class="about-content">
                             <h1 class="header-txt scroll-reveal">Acerca de nosotros</h1>
-                            <div class="divider scroll-reveal">
-                                <?xml version="1.0" encoding="utf-8"?>
-                                <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1930 255.5" style="enable-background:new 0 0 1930 255.5;" xml:space="preserve">
-                                            <style type="text/css">
-                                                .st0{fill:none;stroke:#3c3c3c;stroke-width:10;stroke-linecap:square;stroke-miterlimit:10;}
-                                            </style>
-                                            <polyline class="st0" points="1224,171.8 1181.3,171.8 1139.2,129.6 1065,203.9 970.5,110.4 876,203.6 801.8,129.4 759.7,171.5 
-                                                717,171.5 "/>
-                                            <polyline class="st0" points="5,131.5 757.3,131.5 801.8,176.1 885.9,91.9 868.3,74.2 831.5,111 870.4,149.9 970.2,50.2 1070,149.9 
-                                                1108.8,111 1072.1,74.2 1054.4,91.9 1138.5,176.1 1183.1,131.5 1925,131.5 "/>
-                                            <rect x="921.9" y="26.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 231.426 707.2043)" class="st0" width="95" height="95"/>
-                                            <rect x="921.9" y="99.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 179.8072 728.5855)" class="st0" width="95" height="95"/>
-                                            <rect x="940.3" y="178.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 137.3893 746.1556)" class="st0" width="58.2" height="58.2"/>
-                                            </svg>
-                            </div>
-                            <!--.divider-->
-                            <p class="scroll-reveal" data-origin="top" data-distance="10%">Somos un restaurante 100% familiar que se preocupa por alimentar a las familiar mexicanas. Nuestros precios son justos y elaborados con ingredientes de la mejor calidad. nuestros guisos se cocinan en cazuelas de barro para recordarnos al paladar el exclusivo sabor de nuestras tradiciones mexicanas.</p>
+                                <p class="scroll-reveal" data-origin="top" data-distance="10%">Somos un restaurante 100% familiar que se preocupa por alimentar a las familiar mexicanas. Nuestros precios son justos y elaborados con ingredientes de la mejor calidad. nuestros guisos se cocinan en cazuelas de barro para recordarnos al paladar el exclusivo sabor de nuestras tradiciones mexicanas.</p>
                             
                         </div>
                     </div>
-                    <!--.container-->
                 </section>
                 <!--.about-->
                 <section id="main-menu" class="menu-cart scroll-reveal">
                     <div class="container">
                         <h1 class="header-txt">Nuestras Instalaciones</h1>
-                        <div class="divider">
-                            <?xml version="1.0" encoding="utf-8"?>
-                            <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1930 255.5" style="enable-background:new 0 0 1930 255.5;" xml:space="preserve">
-                                            <style type="text/css">
-                                                .st0{fill:none;stroke:#3c3c3c;stroke-width:10;stroke-linecap:square;stroke-miterlimit:10;}
-                                            </style>
-                                            <polyline class="st0" points="1224,171.8 1181.3,171.8 1139.2,129.6 1065,203.9 970.5,110.4 876,203.6 801.8,129.4 759.7,171.5 
-                                                717,171.5 "/>
-                                            <polyline class="st0" points="5,131.5 757.3,131.5 801.8,176.1 885.9,91.9 868.3,74.2 831.5,111 870.4,149.9 970.2,50.2 1070,149.9 
-                                                1108.8,111 1072.1,74.2 1054.4,91.9 1138.5,176.1 1183.1,131.5 1925,131.5 "/>
-                                            <rect x="921.9" y="26.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 231.426 707.2043)" class="st0" width="95" height="95"/>
-                                            <rect x="921.9" y="99.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 179.8072 728.5855)" class="st0" width="95" height="95"/>
-                                            <rect x="940.3" y="178.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 137.3893 746.1556)" class="st0" width="58.2" height="58.2"/>
-                                            </svg>
-                        </div>
-                        <!--.divider-->
                         <ul class="menu-navigation" data-tabs data-match-height="true" id="example-tabs">
                             <li class="tabs-title is-active"><a class="m-anim" href="#panel1" aria-selected="true" data-text="Starters">Restaurante</a></li>
                             <li class="tabs-title"><a class="m-anim" data-tabs-target="panel2" href="#panel2" data-text="Main Dishes">Área Infantil</a></li>
@@ -556,76 +466,43 @@
                     <!--.container-->
                 </section>
             
-                <a href="#0" class="cd-top">Top</a>
-            
-                <footer id="contact-us">
-                    <div class="container">
-                      <div class="footer-content">
-                            <h3 class="header-txt scroll-reveal">Contacto</h3>
-                            <div class="divider scroll-reveal">
-                                <?xml version="1.0" encoding="utf-8"?>
-                                <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1930 255.5" style="enable-background:new 0 0 1930 255.5;" xml:space="preserve">
-                                            <style type="text/css">
-                                                .st0{fill:none;stroke:#3c3c3c;stroke-width:10;stroke-linecap:square;stroke-miterlimit:10;}
-                                            </style>
-                                            <polyline class="st0" points="1224,171.8 1181.3,171.8 1139.2,129.6 1065,203.9 970.5,110.4 876,203.6 801.8,129.4 759.7,171.5 
-                                                717,171.5 "/>
-                                            <polyline class="st0" points="5,131.5 757.3,131.5 801.8,176.1 885.9,91.9 868.3,74.2 831.5,111 870.4,149.9 970.2,50.2 1070,149.9 
-                                                1108.8,111 1072.1,74.2 1054.4,91.9 1138.5,176.1 1183.1,131.5 1925,131.5 "/>
-                                            <rect x="921.9" y="26.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 231.426 707.2043)" class="st0" width="95" height="95"/>
-                                            <rect x="921.9" y="99.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 179.8072 728.5855)" class="st0" width="95" height="95"/>
-                                            <rect x="940.3" y="178.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 137.3893 746.1556)" class="st0" width="58.2" height="58.2"/>
-                              </svg>
-                            </div>
-                            <!--.divider-->
-                            <div class="contact-info scroll-reveal">
-                                <div class="info-address">
-                                    <h1>Dirección</h1>
-                                    <p>Carretera México-Toluca 402<br>
-                                      Salida carretera a Morelia-Toluca. San Miguel Zinacantepec, Méx. </p>
+                <!--<a href="#0" class="cd-top">Top</a>-->
+                <section class="container pt-0 pb-5 mb-5">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <form action="./sendMail.php" method="post" name="contact">
+                                <div class="form-group">
+                                    <input aria-describedby="emailHelp" class="form-control" name="name" placeholder="NOMBRE*" type="text">
                                 </div>
-                                <div class="reservations">
-                                    <h3>ReservaCIONES</h3>
-                                    <p>reservas@restaurantepielcanela.com.mx<br>
-                                  (722) 3171510</p>
+                                <div class="form-group">
+                                    <input class="form-control" name="last_name" placeholder="APELLIDO*" type="text">
                                 </div>
-                            </div>
-                            <!--.contact-info-->
-                        <div class="contact-form scroll-reveal" data-origin="bottom" data-distance="20%">
-                                <h3>Contactanos</h3>
-                                <form action="index.html" method="POST" name="contactform">
-                                    <input type="text" name="name" placeholder="Nombre*">
-                                    <input type="email" name="email" placeholder="Email*">
-                                    <textarea name="message" id="message" type="message" placeholder="Mensaje"></textarea>
-                                    <button class="send-form">Enviar</button>
-                                </form>
-                          </div>
-                          <p>
-                              <!--.contact-form-->
-                              
-                              <a href="https://www.facebook.com/PielCanelaRestaurante/" target="new"><img src="assets/img/face_icon.png" width="50" height="50" alt=""/></a>
-                            <a href="https://www.facebook.com/PielCanelaRestaurante/"><img src="assets/img/ig_logo.png" width="50" height="50" alt=""/></a>
-                        </p>
-                          <p>&nbsp;</p>
+                                <div class="form-group">
+                                    <input class="form-control" name="email" placeholder="EMAIL*" type="email">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" name="phone" placeholder="TELEFONO" type="number">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" name="message" placeholder="MENSAJE" rows="5"></textarea>
+                                </div>
+                                <button class="btn button-green btn-lg btn-block" type="submit">ENVIAR MENSAJE</button>
+                            </form>
                         </div>
-                            </div>
-                            <!--.social-icons-->
+                        <div class="col-12 col-md-6 text-center text-md-left">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14884.606642104596!2d-86.84646212561995!3d21.14636193484743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1562629246005!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
-                        <!--.footer-content-->
-                        <p class="copy-info">Todos los derechos reservados 2019 ©</p>
                     </div>
-                    <!--.container-->
-                </footer>          
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.0.2/what-input.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.js"></script>
-                <script src="js/app.js"></script>
-                <script src="js/lightbox-plus-jquery.js"></script>
-                <script src="js/main.js"></script>
-                <script src="js/js/modernizr.js"></script>
-                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
-                <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+                </div>
+                  <div><p class="copy-info">Todos los derechos reservados 2019 ©</p></div>
+              </section>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.0.2/what-input.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.js"></script>
+              <script src="js/app.js"></script>
+              <script src="js/main.js"></script>
+              <script src="js/jquery.countTo.js"></script>
+              <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>                <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
             
             
                 <script>
