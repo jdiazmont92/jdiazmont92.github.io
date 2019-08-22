@@ -9,12 +9,13 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <script>document.getElementsByTagName("html")[0].className += " js";</script>
+        <script src="js/funtions.js"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     </head>
     <body>
             <header class="cd-header">
-                    <div id="cd-logo"><a href="#0"><img src="image/cd-logo.svg" alt="Logo"></a></div>
+                    <div id="cd-logo"><a href="#0"><img src="image/logo.png" alt="Logo"></a></div>
             
                     <nav class="cd-main-nav">
                         <ul>
@@ -35,8 +36,6 @@
                         <ul>
                             <li><a href="https://www.facebook.com" target="_blank"> <img src="image/icons8-facebook-50.png"></a></li>
                             <li><a href="https://twitter.com/" target="_blank"> <img src="image/icons8-twitter-50.png"></a></li>
-                            <li><a href="https://www.instagram.com/" target="_blank"> <img src="image/icons8-instagram-50.png"></a></li>
-                            <li><a href="https://www.linkedin.com" target="_blank"> <img src="image/icons8-linkedin-50.png"></a></li>
                         </ul>
                     </div> <!-- cd-intro-tagline -->              
                 </section> <!-- #cd-intro -->
@@ -217,34 +216,54 @@
                               </section> <!-- cd-timeline -->
 
                 <section>
-                <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(image/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+                <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(image/background.jpg);" data-stellar-background-ratio="0.5">
                     <div class="overlay"></div>
                       <div class="colorlib-narrow-content">
                           <div class="row">
-                                  <div class="col-md-3 text-center animate-box">
+                                  <div class="col-md-6 text-center animate-box">
                                         <!--<span class="icon"><i class="flaticon-skyline"></i></span>-->
                                         <span class="colorlib-counter js-counter" data-from="0" data-to="200" data-speed="5000" data-refresh-interval="50"></span>
-                                        <span class="colorlib-counter-label">Proyectos</span>
+                                        <a class="colorlib-counter-label" href="#img1">Trabajos libres</a>
                                     </div>
-                                    <div class="col-md-3 text-center animate-box">
+                                    <div class="col-md-6 text-center animate-box">
                                         <!--<span class="icon"><i class="flaticon-engineer"></i></span>-->
                                         <span class="colorlib-counter js-counter" data-from="0" data-to="3653" data-speed="5000" data-refresh-interval="50"></span>
-                                        <span class="colorlib-counter-label">Empleos Generados</span>
+                                        <a class="colorlib-counter-label" href="#img2">casos quirúrgicos</a>
                                     </div>
-                                    <div class="col-md-3 text-center animate-box">
-                                    <!--<span class="icon"><i class="flaticon-architect-with-helmet"></i></span>-->
+                                    <!--<div class="col-md-3 text-center animate-box">
+                                      <span class="icon"><i class="flaticon-architect-with-helmet"></i></span>
                                         <span class="colorlib-counter js-counter" data-from="0" data-to="5987" data-speed="5000" data-refresh-interval="50"></span>
-                                        <span class="colorlib-counter-label">Clientes</span>
+                                        <span class="colorlib-counter-label">casos quirúrgicos</span>
                                     </div>
                                     <div class="col-md-3 text-center animate-box">
-                                        <!--<span class="icon"><i class="flaticon-worker"></i></span>-->
+                                        <span class="icon"><i class="flaticon-worker"></i></span>
                                         <span class="colorlib-counter js-counter" data-from="0" data-to="3999" data-speed="5000" data-refresh-interval="50"></span>
                                         <span class="colorlib-counter-label">Compañeros</span>
-                                    </div>
+                                    </div>-->
                             </div>
                       </div>
+                      <div class="modal" id="img1">
+                        <h3>Casos Quirurjicos</h3>
+                            <div class="imagen">
+                                <a href="#img2">&#60;</a>
+                                <a href="#img1"><img src="image/casos-quirurgicos.jpg"></a>
+                                <a href="#img2">></a>
+                            </div>
+                        <a class="cerrar" href="">X</a>
+                    </div>
+                        
+                    <div class="modal" id="img2">
+                        <h3>Trabajos Libres</h3>
+                            <div class="imagen">
+                                <a href="#img1">&#60;</a>
+                                <a href="#img2"><img src="image/trabajos-libres.jpg"></a>
+                                <a href="#img1">></a>
+                            </div>
+                        <a class="cerrar" href="">X</a>
+                    </div>
                 </div>
               </section>
+              
               <section class="container-fluid px-0 pt-3 mt-3 pt-md-5 mt-md-5 text-center text-md-left" id="phrase">
                   <div class="row no-gutters">
                       <div class="col-12 col-lg-8">
